@@ -153,4 +153,25 @@ Reporting Bugs: When we find bugs during our Saturday playtests, we will write t
 Tracking Fixes: We will use the matrix to see what's still broken. Once a bug is fixed in the next Friday build, we will mark it as "Resolved."
 
 
+## Module Four Project Log – Team Reflection
+**Contributors:** Rylan, Zachary, Devin, Travisk, Kenan*
+
+**What parts of the testing process did the team perceive to go well?**  
+When testing was possible, testing individual features in isolation worked well. Small systems like basic vehicle movement, UI elements, and simple logic could be tested quickly using Unreal’s Play-In-Editor tools. Informal playtesting helped identify obvious issues early when features were available to test.
+
+**How were bugs identified and corrected?**  
+Bugs were identified primarily through hands-on testing and playtesting. When issues were found, they were discussed by the team and documented so they could be addressed later. However, many fixes were delayed due to repository issues rather than technical difficulty with the bugs themselves.
+
+**In terms of the QA and testing process, what would you do differently to improve the process?**  
+A major challenge during this module was that the team’s GitHub repository ran out of Git LFS bandwidth. This prevented assets from being downloaded and blocked development for much of the week. As a result, a large portion of the team’s time was spent troubleshooting repository and asset management issues instead of actively developing and testing the game. In the future, we would verify repository configuration and asset storage limits earlier to avoid blocking development during critical milestones.
+
+**What tools (chosen in Module Two) did you find successful in the development of your Alpha project? Why?**  
+Discord and GitHub were still effective tools for communication and coordination. Discord allowed the team to quickly communicate problems and updates, while GitHub helped manage project structure and documentation. The traceability matrix was also helpful for keeping track of completed tasks and known issues, especially while development progress was slowed.
+
+**Were there any tools or techniques that you did not find helpful in the success of your project development? Why?**  
+Some third-party assets introduced unnecessary complexity due to underlying code and dependencies that were not immediately clear. Additionally, reliance on Git LFS without sufficient bandwidth caused significant delays. These issues limited the team’s ability to test and iterate on gameplay during this module.
+
+**How did the team approach to the initial analysis of the game design document contribute to the decision to use these tools and techniques?**  
+The initial analysis of the game design document helped the team focus on core gameplay systems and choose tools that supported rapid prototyping and iteration. While external issues limited progress during this module, the original planning helped the team stay aligned on priorities and identify what features needed to be completed once development could resume.
+
 
