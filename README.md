@@ -174,7 +174,7 @@ Some third-party assets introduced unnecessary complexity due to underlying code
 **How did the team approach to the initial analysis of the game design document contribute to the decision to use these tools and techniques?**  
 The initial analysis of the game design document helped the team focus on core gameplay systems and choose tools that supported rapid prototyping and iteration. While external issues limited progress during this module, the original planning helped the team stay aligned on priorities and identify what features needed to be completed once development could resume.
 
-##Module Five Project Log – Team Reflection
+## Module Five Project Log – Team Reflection
 **Contributors:** Rylan, Zachary, Devin, Travisk*
 
 What parts of the plan did the team perceive to go well in relation to the last stage evaluation?
