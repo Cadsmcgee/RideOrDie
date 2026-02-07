@@ -1,3 +1,4 @@
+// WBP_Leaderboard_Cpp.h
 #pragma once
 
 #include "CoreMinimal.h"
@@ -10,22 +11,20 @@ class UVerticalBox;
 UCLASS()
 class GAM305_GREENTEAM_API UWBP_Leaderboard_Cpp : public UUserWidget
 {
-    GENERATED_BODY()
+	GENERATED_BODY()
 
 public:
-    UFUNCTION(BlueprintCallable)
-    void RebuildUI(const TArray<FLeaderboardRuntimeEntry>& Entries);
+	// Call this from BP (or from your HandleLeaderboardChanged)
+	UFUNCTION(BlueprintCallable)
+	void RebuildUI(const TArray<FLeaderboardRuntimeEntry>& Entries);
 
 protected:
-    // VerticalBox in WBP_Leaderboard must be named RowsBox and "Is Variable" checked
-    UPROPERTY(meta = (BindWidget))
-    UVerticalBox* RowsBox = nullptr;
+	// VerticalBox in WBP_Leaderboard must be named RowsBox and "Is Variable" checked
+	UPROPERTY(meta = (BindWidget))
+	UVerticalBox* RowsBox = nullptr;
 
-    // Set this in WBP_Leaderboard -> Class Defaults to WBP_LeaderboardRow
-    UPROPERTY(EditDefaultsOnly, Category = "Leaderboard")
-    TSubclassOf<UUserWidget> RowWidgetClass;
-
-private:
-    static UScriptStruct* GetSTEntryStruct();
-    static void FillSTEntry(UScriptStruct* Struct, void* Dest, const FLeaderboardRuntimeEntry& Src);
+	// Set this in WBP_Leaderboard -> Class Defaults to WBP_LeaderboardRow
+	// (That widget should have Parent Class = UWBP_LeaderboardRow_Cpp)
+	UPROPERTY(EditDefaultsOnly, Category = "Leaderboard")
+	TSubclassOf<UUserWidget> RowWidgetClass;
 };
