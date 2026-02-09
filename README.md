@@ -174,4 +174,19 @@ Some third-party assets introduced unnecessary complexity due to underlying code
 **How did the team approach to the initial analysis of the game design document contribute to the decision to use these tools and techniques?**  
 The initial analysis of the game design document helped the team focus on core gameplay systems and choose tools that supported rapid prototyping and iteration. While external issues limited progress during this module, the original planning helped the team stay aligned on priorities and identify what features needed to be completed once development could resume.
 
+## Module Five Project Log – Team Reflection
+**Contributors:** Rylan, Zachary, Devin, Travisk*
 
+What parts of the plan did the team perceive to go well in relation to the last stage evaluation?
+One thing that went well was how the team responded when a major issue occurred. After the repository broke, the team worked together to identify the cause, troubleshoot the problem, and restore the project so development could continue. This showed that our communication and problem-solving process worked even under pressure.
+
+What parts of the plan did the team perceive to go wrong in relation to the last stage evaluation?
+What did not go well was the introduction of C++ and Visual Studio project files into the repository. This caused compatibility issues and prevented some team members from opening or running the project. As a result, a large portion of the week was spent fixing repository and environment problems instead of working on gameplay features.
+
+Previous evaluations were still useful and were integrated into this stage. We made design changes such as adding the need for fuel and adjusting gameplay systems based on earlier feedback. We also realized the importance of everyone using the same software versions. While that caused some short-term issues, it helped stabilize the project once everyone was aligned.
+
+If we were to improve the collaboration and development process, we would be much stricter about using branches and avoiding direct work in the main branch. That caused several problems and made merging harder than it needed to be. We also noticed that roles started to overlap too much at times, with people stepping into areas outside their assigned responsibilities. While that came from trying to help, it sometimes created confusion instead of progress.
+
+Some tools and techniques were less helpful than expected. Extra Fab assets and folders added unnecessary files to the repository, which contributed to our Git LFS bandwidth issues. While the assets themselves were useful, bringing in too many at once created more problems than benefits and slowed the team down.
+
+As we move toward the Beta stage and final release, our focus is on getting everything working cleanly and cohesively. This includes finishing the UI elements such as the leaderboard and main menu, improving zombie actions so things like dying animations look better, making power-up selection feel intuitive, and ensuring the full game loop works from start to finish without breaking. The goal now is stability, clarity, and polish instead of adding new features at the last minute.
