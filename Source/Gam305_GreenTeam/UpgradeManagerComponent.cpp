@@ -1,4 +1,3 @@
-// UpgradeManagerComponent.cpp
 #include "UpgradeManagerComponent.h"
 
 bool UUpgradeManagerComponent::HasUpgrade(EUpgradeId Id) const
@@ -6,14 +5,14 @@ bool UUpgradeManagerComponent::HasUpgrade(EUpgradeId Id) const
 	return OwnedUpgrades.Contains(Id);
 }
 
-void UUpgradeManagerComponent::ApplyUpgrade(EUpgradeId Id, float Value)
+void UUpgradeManagerComponent::ApplyUpgrade(const FUpgradeDef& UpgradeDef)
 {
-	// Prevent duplicates if you want (comment out if stackable)
+	const EUpgradeId Id = UpgradeDef.Id;
+	const float Value = UpgradeDef.BaseValue;
+
+	// Prevent duplicates (remove if you want stacking)
 	if (OwnedUpgrades.Contains(Id))
-	{
-		// If you want stacking, delete this block.
 		return;
-	}
 
 	switch (Id)
 	{
@@ -42,5 +41,7 @@ void UUpgradeManagerComponent::ApplyUpgrade(EUpgradeId Id, float Value)
 	}
 
 	OwnedUpgrades.Add(Id);
-	OnUpgradeApplied.Broadcast(Id);
+
+	// Broadcast the full def so listeners can Break it and read BaseValue/Name/etc
+	OnUpgradeApplied.Broadcast(UpgradeDef);
 }
